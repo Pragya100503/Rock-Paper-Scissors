@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors Game</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
 </head>
 <body>
     <h1>Rock Paper Scissors</h1>
     <div class="choices">
         <div class="choice" id="rock">
-            <img src="C:\Users\pragy\OneDrive\Desktop\RockPaperScissors\rock.png" />
+            <img src="./assets/images/rock.png" alt="Rock"  title="Rock" />
         </div>
         <div class="choice" id="paper">
-            <img src="C:\Users\pragy\OneDrive\Desktop\RockPaperScissors\paper.png" />
+            <img src="./assets/images/paper.png" alt="Paper" title="Paper"/>
         </div>
         <div class="choice" id="scissors">
-            <img src="C:\Users\pragy\OneDrive\Desktop\RockPaperScissors\scissors.png" />
+            <img src="./assets/images/scissors.png" alt="Scissor" title="Scissor"/>
         </div>
     </div>
     <div class="score-board">
         <div class="score">
             <p id="user-score">0</p>
+            <!-- Dynamically reference all strings for translations in future -->
             <p>You</p>
         </div>
         <div class="score">
@@ -32,6 +33,20 @@
     <div class="msg-container">
         <p id="msg">Play your move</p>
     </div>
-    <script src="C:\Users\pragy\OneDrive\Desktop\RockPaperScissors\app.js"></script>
+    <div class="move-history-container">
+        <header class="move-history-header">Move History</header>
+        <table class="move-history-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>You</th>
+                    <th>Computer</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody id="move-history"></tbody>
+        </table>
+    </div>    
+    <script src="./app.js"></script>
 </body>
 </html>
